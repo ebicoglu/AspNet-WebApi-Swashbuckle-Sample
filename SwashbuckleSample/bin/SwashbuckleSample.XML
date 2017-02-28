@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwashbuckleSample</name>
+    </assembly>
+    <members>
+        <member name="T:SwashbuckleSample.Controllers.UsersV2Controller">
+            <summary>
+            CRUD operations on user model. This is the v2 of the api
+            </summary>
+        </member>
+        <member name="M:SwashbuckleSample.Controllers.UsersV2Controller.#ctor">
+            <summary>
+            Crud operations for users
+            </summary>
+        </member>
+        <member name="M:SwashbuckleSample.Controllers.UsersV2Controller.Get(System.Int32)">
+            <summary>
+            This method is deprecated, please use GetUserNew instead. In the next version this will be removed!
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SwashbuckleSample.Controllers.UsersV1Controller">
+            <summary>
+            CRUD operations on user model. This is the v1 of the api
+            </summary>
+        </member>
+        <member name="M:SwashbuckleSample.Controllers.UsersV1Controller.#ctor">
+            <summary>
+            Crud operations for users
+            </summary>
+        </member>
+        <member name="M:SwashbuckleSample.Controllers.UsersV1Controller.Get">
+             <summary xml:lang="en-US">
+            Wellcome message
+             </summary>
+             <summary xml:lang="tr">
+            Hoşgeldiniz 
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:SwashbuckleSample.Controllers.UsersV1Controller.Get(System.Int32)">
+            <summary>
+            Gets a user by id.
+            </summary>
+            <remarks>Id is integer and must be greater than zero!</remarks>
+            <param name="id">Id of the user</param>
+            <returns>User object</returns>
+        </member>
+        <member name="M:SwashbuckleSample.Controllers.UsersV1Controller.Post(SwashbuckleSample.Models.User)">
+            <summary>
+            Creates new user.
+            </summary>
+            <param name="newUser">New user to be created</param>
+        </member>
+        <member name="M:SwashbuckleSample.Controllers.UsersV1Controller.Update(System.Int32,SwashbuckleSample.Models.User)">
+            <summary>
+            Updates user.
+            </summary>
+            <param name="id">id of user</param>
+            <param name="user">user to be updated</param>
+            <returns>200 HTPP Ok with the message "Successfully updated."</returns>
+        </member>
+        <member name="M:SwashbuckleSample.Controllers.UsersV1Controller.Delete(System.Int32)">
+            <summary>
+            Deletes an existing user
+            </summary>
+            <param name="id">User to be deleted</param>
+            <returns>Http-200 OK if success.</returns>
+        </member>
+        <member name="T:SwashbuckleSample.Models.User">
+            <summary>
+            User model for CRUD operations
+            </summary>
+        </member>
+        <member name="P:SwashbuckleSample.Models.User.Id">
+            <summary>
+            Unique key
+            </summary>
+        </member>
+        <member name="P:SwashbuckleSample.Models.User.Name">
+            <summary>
+            User's full name
+            </summary>
+        </member>
+        <member name="P:SwashbuckleSample.Models.User.Email">
+            <summary>
+            User's email address
+            </summary>
+        </member>
+    </members>
+</doc>
